@@ -1016,6 +1016,13 @@ int f2fs_fill_dentries(struct dir_context *ctx, struct f2fs_dentry_ptr *d,
 
 		/* check memory boundary before moving forward */
 		bit_pos += GET_DENTRY_SLOTS(le16_to_cpu(de->name_len));
+
+
+
+
+
+
+
 			int save_len = fstr->len;
 
 			err = fscrypt_fname_disk_to_usr(d->inode,
