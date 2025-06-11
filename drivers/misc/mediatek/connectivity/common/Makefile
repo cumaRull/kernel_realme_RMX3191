@@ -22,8 +22,13 @@ endif
 endif
 
 ###############################################################################
+# Necessary Check
 
 ifneq ($(CONFIG_MTK_COMBO),)
+
+ifneq ($(KERNEL_OUT),)
+    ccflags-y += -imacros $(KERNEL_OUT)/include/generated/autoconf.h
+endif
 
 ifeq ($(CONFIG_MTK_COMBO_CHIP),)
     $(error CONFIG_MTK_COMBO_CHIP not defined)
