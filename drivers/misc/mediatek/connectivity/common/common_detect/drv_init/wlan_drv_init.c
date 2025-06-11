@@ -32,7 +32,7 @@ int __attribute__((weak)) mtk_wcn_wlan_gen3_init(void)
 	return 0;
 }
 
-int __attribute__((weak)) mtk_wcn_wlan_gen2_init(void)
+int __attribute__((weak)) mtk_wcn_wlan_gen2_init(void
 {
 	WMT_DETECT_PR_DBG("no impl. mtk_wcn_wlan_gen2_init\n");
 	return 0;
