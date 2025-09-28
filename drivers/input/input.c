@@ -380,7 +380,6 @@ static int input_get_disposition(struct input_dev *dev,
 #ifdef VENDOR_EDIT
 extern void __attribute__((weak)) oppo_sync_saupwk_event(unsigned int , unsigned int , int);
 #endif /* VENDOR_EDIT */
-
 static void input_handle_event(struct input_dev *dev,
 			       unsigned int type, unsigned int code, int value)
 {
