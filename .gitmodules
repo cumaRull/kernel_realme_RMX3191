@@ -2,3 +2,7 @@
 	path = KernelSU
 	url = https://github.com/SukiSU-Ultra/SukiSU-Ultra.git
 	branch = susfs-main
+[submodule "KernelSU-Next"]
+	path = KernelSU-Next
+	url = https://github.com/sidex15/KernelSU-Next.git
+	branch = next-susfs
