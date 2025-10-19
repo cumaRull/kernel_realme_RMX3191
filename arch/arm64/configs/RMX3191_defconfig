@@ -4607,7 +4607,6 @@ CONFIG_TEE=y
 #
 # KernelSU
 #
-# CONFIG_KSU is not set
 
 #
 # Firmware Drivers
