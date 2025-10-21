@@ -4605,7 +4605,6 @@ CONFIG_TEE=y
 # CONFIG_OPTEE is not set
 
 #
-
 #
 # Firmware Drivers
 #
