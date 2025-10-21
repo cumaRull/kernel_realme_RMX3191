@@ -380,8 +380,8 @@ show_map_vma(struct seq_file *m, struct vm_area_struct *vma)
 			start = vma->vm_start;
 			end = vma->vm_end;
 			seq_setwidth(m, 25 + sizeof(void *) * 6 - 1);
-			seq_put_hex_ll(m, NULL, vma->vm_start, 8);
-			seq_put_hex_ll(m, "-", vma->vm_end, 8);
+			seq_put_hex_ll(m, NULL, start, 8);
+			seq_put_hex_ll(m, "-", end, 8);
 			seq_putc(m, ' ');
 			seq_putc(m, '-');
 			seq_putc(m, '-');
