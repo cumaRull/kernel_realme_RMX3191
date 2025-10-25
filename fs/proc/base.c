@@ -946,7 +946,6 @@ static ssize_t mem_rw(struct file *file, char __user *buf,
 
 	while (count > 0) {
 		size_t this_len = min_t(size_t, count, PAGE_SIZE);
-
 		if (write && copy_from_user(page, buf, this_len)) {
 			copied = -EFAULT;
 			break;
