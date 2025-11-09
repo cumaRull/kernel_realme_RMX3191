@@ -375,7 +375,7 @@ show_map_vma(struct seq_file *m, struct vm_area_struct *vma)
 
 	if (file) {
 		struct inode *inode = file_inode(vma->vm_file);
-#ifdef CONFIG_KSU_SUSFS_SUS_MAP
+/*#ifdef CONFIG_KSU_SUSFS_SUS_MAP
 		if (unlikely(inode->i_mapping->flags & BIT_SUS_MAPS) && susfs_is_current_proc_umounted()) {
 			seq_setwidth(m, 25 + sizeof(void *) * 6 - 1);
 			seq_put_hex_ll(m, NULL, vma->vm_start, 8);
@@ -392,7 +392,7 @@ show_map_vma(struct seq_file *m, struct vm_area_struct *vma)
 			seq_putc(m, ' ');
 			goto done;
 		}
-#endif
+#endif*/
 #ifdef CONFIG_KSU_SUSFS_SUS_KSTAT
 		if (unlikely(inode->i_mapping->flags & BIT_SUS_KSTAT)) {
 			susfs_sus_ino_for_show_map_vma(inode->i_ino, &dev, &ino);
@@ -951,7 +951,8 @@ static int show_smap(struct seq_file *m, void *v)
 			   vma_mmu_pagesize(vma) >> 10);
 #ifdef CONFIG_KSU_SUSFS_SUS_MAP
 bypass_orig_flow:
-#endif
+#endif																																																																																									   			   (unsigned long)(mss->pss_locked >> (10 + PSS_SHIFT)));
+																																																																																																		   
 
 #ifdef CONFIG_KSU_SUSFS_SUS_MAP
 		if (vma->vm_file &&
